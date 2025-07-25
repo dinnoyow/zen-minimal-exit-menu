@@ -15,18 +15,17 @@
 
 .titlebar-min {
     background-color: hsl(130, 50%, 40%) !important;
+    content: none !important;
 }
 
 .titlebar-max, .titlebar-restore {
     background-color: hsl(60, 50%, 50%) !important;
+    content: none !important;
 }
 
 .titlebar-close {
     background-color: hsl(0, 50%, 50%) !important;
-}
-
-.titlebar-button > image {
-    visibility: collapse !important;
+    content: none !important;
 }
 
 @media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
