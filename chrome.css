@@ -11,6 +11,7 @@
     margin-left: 5px !important;
     border-radius: 50px;
     transition: all 100ms;
+    font-size: 0px !important;
 }
 
 .titlebar-min {
