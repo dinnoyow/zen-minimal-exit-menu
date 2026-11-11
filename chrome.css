@@ -1,5 +1,8 @@
 .titlebar-buttonbox {
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .titlebar-button {
@@ -7,10 +10,12 @@
     min-height: 13px !important;
     min-width: 13px !important;
     height: 13px !important;
+    flex: 0 0 13px !important;
     align-self: center;
-    margin-left: 5px !important;
-    border-radius: 50px;
-    transition: all 100ms;
+    width: 13px !important;
+    margin: 0 !important;
+    border-radius: 50%;
+    transition: transform 150ms ease, opacity 150ms ease, box-shadow 150ms ease;
 }
 
 .titlebar-min {
@@ -31,7 +36,9 @@
 
 @media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
     .titlebar-button:hover {
-        opacity: 0.25 !important;
+        opacity: 0.65 !important;
+        transform: scale(1.2);
+        box-shadow: 0 0 0 2px color-mix(in srgb, currentColor 20%, transparent);
     }
 }
 
@@ -53,6 +60,7 @@
     }
     
     .titlebar-button:hover {
-        min-height: 20px !important;
+        transform: scale(1.2);
+        box-shadow: 0 0 0 2px color-mix(in srgb, currentColor 20%, transparent);
     }
 }
